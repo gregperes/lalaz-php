@@ -62,13 +62,13 @@ abstract class Model extends Object {
     public function __construct() {
         $this->errorTitle = "Model Error";
         $this->environment = Config::read("environment");
-        $this->conn = DatabaseFactory::createDatabase();
-        
+        $this->conn = DatabaseFactory::createDatabase();     
+
         if (empty($this->table)) {
             $databaseConfig = Config::read("database");
             $tablePrefix = $databaseConfig[$this->environment]["prefix"];
             
-            $this->table =  $tablePrefix . get_class($this);
+            $this->table =  StringHelper::underscore($tablePrefix . get_class($this));
             $this->setTable($this->table);
         }
     }
