@@ -12,9 +12,9 @@
 Config::write("database", array(
     "development" => array(
         "driver" => "mysql",
-        "host" => "10.0.1.4",
+        "host" => "localhost",
         "user" => "root",
-        "password" => "lithium@13",
+        "password" => "123456",
         "database" => "lalazdb",
         "prefix" => ""
     ),

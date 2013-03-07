@@ -1,5 +1,5 @@
 Options +FollowSymlinks
 <IfModule mod_rewrite.c>
     RewriteEngine On
-    RewriteRule ^(.*)$ /~Gregory/LalazPhp/app/webfiles/$1 [L]
+    RewriteRule ^(.*)$ app/webfiles/$1 [L]
 </IfModule>
