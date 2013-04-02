@@ -33,6 +33,10 @@ class DatabaseFactory extends Object {
                 $database = new MysqlDatabase($config);
                 break;
 
+            case "postgres" :
+                $database = new PostgresDatabase($config);
+                break;
+
             default :
                 $error = new Error("Configuration Error", "The driver $driver was not implemented.");
                 $error->render();
