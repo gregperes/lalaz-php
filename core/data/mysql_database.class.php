@@ -293,7 +293,7 @@ class MysqlDatabase extends Database {
     }
 
     public function beginTransaction() {
-            return $this->transactionStarted = $this->query("START TRANSACTION");
+        return $this->transactionStarted = $this->query("START TRANSACTION");
     }
 	
     public function commitTransaction() {

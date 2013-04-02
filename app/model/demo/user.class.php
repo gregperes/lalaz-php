@@ -9,6 +9,6 @@
  * @copyright Copyright 2010, WMD (http://www.wmdweb.com.br)
  */
 class User extends Model {
-    
+	
 }
 ?>

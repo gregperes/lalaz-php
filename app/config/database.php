@@ -14,7 +14,7 @@ Config::write("database", array(
         "driver" => "mysql",
         "host" => "localhost",
         "user" => "root",
-        "password" => "123456",
+        "password" => "greg1212",
         "database" => "lalazdb",
         "prefix" => ""
     ),
