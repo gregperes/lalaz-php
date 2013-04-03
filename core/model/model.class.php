@@ -136,7 +136,23 @@ abstract class Model extends Object {
     public function insert($data = array()) {
         $data = $this->getFieldsWithValues($data);
         $result = $this->conn->insert($this->table, $data);
-        $this->id = $this->conn->insertedId();
+        $environment = Config::read("environment");
+        $configs = Config::read("database");
+        $databaseDriver = ArrayHelper::getValue("driver", $configs);
+        
+        switch ($databaseDriver) {
+            case "mysql" :
+                $this->id = $this->conn->insertedId();
+                break;
+
+            case "postgres" :
+                $this->id = $result;
+                break;
+            
+            default:
+                break;
+        }
+
         return $result;
     }
     

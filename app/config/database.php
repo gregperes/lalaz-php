@@ -8,15 +8,14 @@
  * @author Gregory Peres Serrão (gregory@wmdweb.com.br)
  * @copyright Copyright 2010, WMD (http://www.wmdweb.com.br)
  */
-
 Config::write("database", array(
     "development" => array(
-        "driver" => "mysql",
+        "driver" => "postgres",
         "host" => "localhost",
-        "user" => "root",
-        "password" => "greg1212",
+        "user" => "postgres",
+        "password" => "123456",
         "database" => "lalazdb",
-        "prefix" => ""
+        "prefix" => "tb"
     ),
     "test" => array(
         "driver" => "",

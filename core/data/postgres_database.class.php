@@ -186,7 +186,7 @@ class PostgresDatabase extends Database {
         $sql .= " SELECT 'YES' FROM information_schema.key_column_usage a";
         $sql .= " INNER JOIN information_schema.table_constraints b";
         $sql .= " ON a.constraint_name = b.constraint_name AND c.column_name = a.column_name";
-        $sql .= " WHERE a.table_name = 'cliente' AND b.constraint_type = 'PRIMARY KEY'";
+        $sql .= " WHERE a.table_name = '{$table}' AND b.constraint_type = 'PRIMARY KEY'";
         $sql .= " ) AS is_primarykey";
         $sql .= " FROM information_schema.columns AS c";
         $sql .= " WHERE c.table_name = '{$table}'";

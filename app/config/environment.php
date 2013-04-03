@@ -12,7 +12,6 @@
  * @author Gregory Peres Serrão (gregory@wmdweb.com.br)
  * @copyright Copyright 2010, WMD (http://www.wmdweb.com.br)
  */
-
 Config::write("environment", "development");
 //Config::write("test");
 //Config::write("production");
