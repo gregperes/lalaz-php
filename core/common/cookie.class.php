@@ -54,7 +54,7 @@ class Cookie extends Singleton {
     public static function write($name, $value, $expires = null) {
         $self = self::getInstance("Cookie");
         $expires = $self->expire($expires);
-        $path = Mapper::normalize(Mapper::base() . $self->path);
+        $path = UrlRouter::normalize(UrlRouter::base() . $self->path);
         return setcookie("{$self->name}[{$name}]", self::encrypt($value), $expires, $path, $self->domain, $self->secure);
     }
 
