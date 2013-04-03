@@ -16,6 +16,10 @@ class StringHelper extends Object {
         
         return $buffer;
     }
+
+    public static function camelize($value, $separator = "_") {
+        return str_replace(" ", "", ucwords(str_replace($separator, " ", $value)));
+    }
     
     public static function underscore($string) {
         return strtolower(preg_replace('/(?<=\\w)([A-Z])/', '_\\1', $string));

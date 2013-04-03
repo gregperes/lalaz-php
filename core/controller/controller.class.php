@@ -28,7 +28,7 @@ class Controller extends Singleton {
             $requestData["id"] = $path["id"];
         }
         
-        $actionPath = $prefix . DIRECTORY_SEPARATOR . $directory . DIRECTORY_SEPARATOR . "$action.class.php";
+        $actionPath = $prefix . DIRECTORY_SEPARATOR . $directory . DIRECTORY_SEPARATOR . str_replace("-", "_", "$action.class.php");
         $actionClassDir = APP_ACTIONS_PATH . DIRECTORY_SEPARATOR . $actionPath;
 
         if (!file_exists($actionClassDir)) {
@@ -37,8 +37,10 @@ class Controller extends Singleton {
 
         require_once($actionClassDir);
 
+        $actionClassName = StringHelper::camelize($action, "-");
+
         $view = new View($path);
-        $actionInstance = new $action($requestData);
+        $actionInstance = new $actionClassName($requestData);
         $actionInstance->execute($view);
     }
 }
