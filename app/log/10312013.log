@@ -1,0 +1,6 @@
+10-31-2013 20:20:25 - SELECT column_name, column_default, is_nullable, is_identity, data_type, ( SELECT 'YES' FROM information_schema.key_column_usage a INNER JOIN information_schema.table_constraints b ON a.constraint_name = b.constraint_name AND c.column_name = a.column_name WHERE a.table_name = 'tb_user' AND b.constraint_type = 'PRIMARY KEY' ) AS is_primarykey FROM information_schema.columns AS c WHERE c.table_name = 'tb_user' ORDER BY c.ordinal_position
+10-31-2013 20:20:57 - SHOW COLUMNS FROM user
+10-31-2013 20:20:57 - SELECT id,name,email FROM user    
+10-31-2013 20:21:00 - SHOW COLUMNS FROM user
+10-31-2013 20:21:00 - INSERT INTO `user` (`name`, `email`) VALUES ('fsdfsdf', 'fsdfsdfsd')
+10-31-2013 20:21:00 - SELECT id,name,email FROM user    

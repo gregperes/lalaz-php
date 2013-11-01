@@ -1,0 +1,50 @@
+11-01-2013 10:48:01 - SHOW COLUMNS FROM user
+11-01-2013 10:48:01 - SELECT id,name,email FROM user    
+11-01-2013 10:48:07 - SHOW COLUMNS FROM user
+11-01-2013 10:48:07 - SELECT id,name,email FROM user WHERE id = 4   LIMIT 1
+11-01-2013 10:48:07 - SELECT id,name,email FROM user    
+11-01-2013 10:48:10 - SHOW COLUMNS FROM user
+11-01-2013 10:48:10 - DELETE FROM `user` WHERE id = 4
+11-01-2013 10:48:10 - SHOW COLUMNS FROM user
+11-01-2013 10:48:10 - SELECT id,name,email FROM user    
+11-01-2013 10:48:18 - SHOW COLUMNS FROM user
+11-01-2013 10:48:18 - SELECT id,name,email FROM user    
+11-01-2013 10:48:23 - SHOW COLUMNS FROM user
+11-01-2013 10:48:23 - SELECT id,name,email FROM user    
+11-01-2013 10:48:43 - SHOW COLUMNS FROM user
+11-01-2013 10:48:43 - INSERT INTO `user` (`name`, `email`) VALUES ('fdsfsd', 'fsdfsdfsd')
+11-01-2013 10:48:43 - SELECT id,name,email FROM user    
+11-01-2013 10:48:46 - SHOW COLUMNS FROM user
+11-01-2013 10:48:46 - SELECT id,name,email FROM user WHERE id = 5   LIMIT 1
+11-01-2013 10:48:46 - SELECT id,name,email FROM user    
+11-01-2013 10:48:48 - SHOW COLUMNS FROM user
+11-01-2013 10:48:48 - UPDATE `user` SET `name` = 'fdsfsd', `email` = 'fsdfsdfsdfsdfsdfsd' WHERE id = 5
+11-01-2013 10:48:48 - SELECT id,name,email FROM user    
+11-01-2013 10:48:51 - SHOW COLUMNS FROM user
+11-01-2013 10:48:51 - DELETE FROM `user` WHERE id = 5
+11-01-2013 10:48:51 - SHOW COLUMNS FROM user
+11-01-2013 10:48:51 - SELECT id,name,email FROM user    
+11-01-2013 10:49:01 - SHOW COLUMNS FROM user
+11-01-2013 10:49:01 - SELECT id,name,email FROM user    
+11-01-2013 10:49:41 - SHOW COLUMNS FROM user
+11-01-2013 10:49:41 - SELECT id,name,email FROM user    
+11-01-2013 10:49:42 - SHOW COLUMNS FROM user
+11-01-2013 10:49:42 - SELECT id,name,email FROM user    
+11-01-2013 10:49:45 - SHOW COLUMNS FROM user
+11-01-2013 10:49:45 - SELECT id,name,email FROM user    
+11-01-2013 10:50:01 - SHOW COLUMNS FROM user
+11-01-2013 10:50:01 - SELECT id,name,email FROM user    
+11-01-2013 10:50:02 - SHOW COLUMNS FROM user
+11-01-2013 10:50:02 - SELECT id,name,email FROM user    
+11-01-2013 10:50:10 - SHOW COLUMNS FROM user
+11-01-2013 10:50:10 - SELECT id,name,email FROM user    
+11-01-2013 10:50:14 - SHOW COLUMNS FROM user
+11-01-2013 10:50:14 - INSERT INTO `user` (`name`, `email`) VALUES ('fsdfsd', 'fdsfsdfsd')
+11-01-2013 10:50:14 - SELECT id,name,email FROM user    
+11-01-2013 10:50:16 - SHOW COLUMNS FROM user
+11-01-2013 10:50:16 - DELETE FROM `user` WHERE id = 6
+11-01-2013 10:50:16 - SHOW COLUMNS FROM user
+11-01-2013 10:50:16 - SELECT id,name,email FROM user    
+11-01-2013 10:50:24 - SHOW COLUMNS FROM user
+11-01-2013 10:50:24 - INSERT INTO `user` (`name`, `email`) VALUES ('fdsfsd', 'dsfsdfsd')
+11-01-2013 10:50:24 - SELECT id,name,email FROM user    

@@ -1,21 +1,21 @@
 <?php
 /**
  * This file is responsible for configure the databases for the environmnets of the application.
- * 
+ *
  * This file is part of the Lalaz Framework
  * Lalaz it's a open source MVA (Model View Action) Framework writen in PHP
- * 
+ *
  * @author Gregory Peres Serrão (gregory@wmdweb.com.br)
  * @copyright Copyright 2010, WMD (http://www.wmdweb.com.br)
  */
 Config::write("database", array(
     "development" => array(
-        "driver" => "postgres",
+        "driver" => "mysql",
         "host" => "localhost",
-        "user" => "postgres",
-        "password" => "123456",
+        "user" => "root",
+        "password" => "",
         "database" => "lalazdb",
-        "prefix" => "tb"
+        "prefix" => ""
     ),
     "test" => array(
         "driver" => "",
